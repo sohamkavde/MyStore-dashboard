@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+import UseImport from "./Extralib/UseImport";
+import Admin from "./component/admin/admin";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,9 +12,13 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en">      
+      <body className={inter.className}>
+        <UseImport/>
+        <Admin main={children}/>
+       </body>
     </html>
   );
 }

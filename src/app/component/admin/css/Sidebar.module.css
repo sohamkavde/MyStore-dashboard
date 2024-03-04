@@ -1,0 +1,16 @@
+.sidebar{
+    color: #fff;
+}
+.heading{
+    padding: 5%;
+    height: 100px;
+}
+.heading>b{
+    font-size: 25px;
+}
+.accordino{
+    padding: 5%;
+}
+.burgerOpenClose{
+    cursor: pointer;
+}
